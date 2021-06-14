@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: error-create
+  namespace: digitalinnovation
+  labels:
+    app: error-create-pod
+spec:
+  securityContext:
+    runAsNonRoot: false
+  containers:
+  - name:  error-create-contenedor
+    image: nginx
