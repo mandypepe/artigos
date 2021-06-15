@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name:  one
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-pod
+  namespace: default
+  labels:
+    app: simple-pod
+spec:
+  containers:
+  - name: simple-pod
+    image: busybox
+    command:
+      - date
+      - "-u"
+---
