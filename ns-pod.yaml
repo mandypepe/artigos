@@ -15,6 +15,6 @@ spec:
   - name: simple-pod
     image: busybox
     command:
-      - date
-      - "-u"
+      - sleep
+      - "3600"
 ---
